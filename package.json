@@ -1,0 +1,25 @@
+{
+  "name": "ahh-bart",
+  "version": "1.0.0",
+  "description": "Our Ahhhsome BART Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FannyV31/Ahh-BART.git"
+  },
+  "author": "Dalton Hart and Fanny Villarosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FannyV31/Ahh-BART/issues"
+  },
+  "homepage": "https://github.com/FannyV31/Ahh-BART#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2"
+  }
+}
