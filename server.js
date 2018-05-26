@@ -10,7 +10,7 @@ app.use(express.static('public'));
 const db = require(`./models`);
 
 // get controllers
-//app.get('/api', controllers.api.index);
+app.get('/api', controllers.api.index);
 
 
 //send index to front of server
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 
 //routes
-//app.get('/api/albums', controllers.albums.index);
+app.get('/api/posts', controllers.post.index);
 
 
 
