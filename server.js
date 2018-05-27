@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
 
 //routes
 app.get('/api/posts', controllers.post.index);
+app.get('/api/stations', controllers.locat.index);
 
 
 
