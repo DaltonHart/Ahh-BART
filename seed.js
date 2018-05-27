@@ -52,9 +52,19 @@ db.Locat.remove({}, function(err, locats){
   });
 
   var stations = [
-      {
+    {
           name : '12th St. Oakland City Center',
           coord: '37.803647,-122.271596',
           img: 'location in file system',
-      }
+    },
+    {
+        name : '16th St. Mission (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : '19th St. Oakland',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
   ]

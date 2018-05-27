@@ -1,4 +1,5 @@
 module.exports = {
     api: require('./apiController'),
-    post: require('./postsController')
+    post: require('./postsController'),
+    locat: require('./locationController')
   }
