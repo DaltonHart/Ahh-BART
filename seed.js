@@ -172,4 +172,129 @@ db.Locat.remove({}, function(err, locats){
         coord: '37.803647,-122.271596',
         img: 'location in file system',
     },
+    {
+        name : 'Lake Merritt (Oakland)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'MacArthur (Oakland)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Millbrae',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Montgomery St. (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'North Berkeley',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'North Concord / Martinez',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Oakland International Airport',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Orinda',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Pittsburg / Bay Point',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Pittsburg Center',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Pleasant Hill / Contra Costa',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Centre',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Powell St. (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Richmond',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Rockridge (Oakland)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'San Bruno',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'San Francisco International Airport',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'San Leandro',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'South Hayward',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'South San Francisco',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Union City',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Walnut Creek',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Warm Springs / South Fremont',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'West Dublin / Pleasanton',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'West Oakland',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
   ]
