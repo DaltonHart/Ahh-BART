@@ -53,9 +53,9 @@ db.Locat.remove({}, function(err, locats){
 
   var stations = [
     {
-          name : '12th St. Oakland City Center',
-          coord: '37.803647,-122.271596',
-          img: 'location in file system',
+        name : '12th St. Oakland City Center',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
     },
     {
         name : '16th St. Mission (SF)',
@@ -64,6 +64,111 @@ db.Locat.remove({}, function(err, locats){
     },
     {
         name : '19th St. Oakland',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : '24th St. Mission (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Antioch',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Ashby (Berkeley)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Balboa Park (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Bay Fair (San Leandro)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Castro Valley',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Civic Center / UN Plaza',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Coliseum',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Colma',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Concord',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Daly City',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Downtown Berkeley',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Dublin / Pleasanton',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'El Cerrito del Norte',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'El Cerrito Plaza',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Embarcadero (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Fremont',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Fruitvale (Oakland)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Glen Park (SF)',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'Hayward',
+        coord: '37.803647,-122.271596',
+        img: 'location in file system',
+    },
+    {
+        name : 'lafayette',
         coord: '37.803647,-122.271596',
         img: 'location in file system',
     },
