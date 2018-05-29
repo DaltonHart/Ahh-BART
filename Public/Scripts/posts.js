@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
 console.log('Posts Working!');
     $('#info').ready(function(){
         $.ajax({
@@ -28,8 +29,7 @@ console.log('Posts Working!');
          </article>`);
            $('.item3').append(commentHTML);
        };
-
-
+       
 });
 
 
