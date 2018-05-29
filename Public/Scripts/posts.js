@@ -13,12 +13,12 @@ console.log('Posts Working!');
             console.log(b);
           };
 
-        function responseSucc() {
+        function responseSucc(posts) {
             posts.forEach(function(post){
                 renderPosts(post);
             });
         };
-       function renderPosts(){
+       function renderPosts(post){
            console.log('rendered:',post);
            var commentHTML = (`<article>
            <image src="#" />
