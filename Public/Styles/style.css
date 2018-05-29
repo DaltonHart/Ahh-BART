@@ -9,44 +9,42 @@ img {
 .container {
   display: grid;
   grid-gap: 10px;
-  background-color: #3e2723;
   padding: 10px;
   border-radius: 10px;
 
 }
 .container > div {
   background-color: #80cbc4;
-  border: 1px solid #fff;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 40px;
   font-size: 30px;
   text-align: left;
 }
-.item1 {
+.container button {
+  background-color: #80cbc4;
+  border: 1px solid black;
+  border-radius: 10px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-<<<<<<< HEAD
   font-family: 'Julee', cursive;
-=======
->>>>>>> 73d68162fc4b7f50412729dc0f9ba8349edd8134
+  font-size: 2em;
 }
+
 .item2 {
   grid-column: 1 / 2;
   grid-row: 2 / 6;
-<<<<<<< HEAD
   font-family: 'Julee', cursive;
-=======
->>>>>>> 73d68162fc4b7f50412729dc0f9ba8349edd8134
+  font-size: 2em;
 }
 .item3 {
   grid-column: 2 / 6;
   grid-row: 1 / 6;
-<<<<<<< HEAD
   font-family: 'Julee', cursive;
 }
 
-@media (width: 800px) {
-  
-  }
-=======
+
 }
->>>>>>> 73d68162fc4b7f50412729dc0f9ba8349edd8134
+@media (width: 800px) {
+
+  }
