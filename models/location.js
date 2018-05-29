@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 //models/album.js
 var LocationSchema = new Schema({
   name : String,
-  coord : String,
+  coord : {lng: Number, lat: Number},
   img : String,
 });
 

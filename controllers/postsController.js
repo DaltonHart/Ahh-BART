@@ -14,6 +14,7 @@ function index(req, res) {
 // POST /api/post
 function create(req, res) {
   // create an post based on request body and send it back as JSON
+  
 }
 
 // GET /api/post/:postId
