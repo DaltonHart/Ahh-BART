@@ -23,10 +23,14 @@ app.get('/', (req, res) => {
 
 
 //routes
+//GETS
 app.get('/api/posts', controllers.post.index);
 app.get('/api/stations', controllers.locat.index);
-
+app.get('/api/stations/update', controllers.locat.create);
+//POSTS
+//creates posts on post request
 app.post('/api/posts', controllers.post.create);
+
 
 
 

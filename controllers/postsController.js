@@ -18,7 +18,7 @@ function create(req, res) {
   console.log(req.body);
   db.Post.create(newPost, function(err, newPost){
     if(err){res.status(500).json({"ERROR":"Database Error"});}
-    res.json({'post': newPost});
+    res.json(newPost);
   });
 }
 

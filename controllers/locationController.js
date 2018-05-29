@@ -4,17 +4,27 @@ const db = require(`../models`);
 // GET /api/stations
 function index(req, res) {
   db.Locat.find()
-  .exec(function(err, location) {
-    if (err) {
-      return console.log("index error: " + err); }
-      res.json(stations);
-    });
+    .exec(function(err, location) {
+      if (err) {
+        return console.log("index error: " + err); }
+        res.json(location);
+      });
+  
+  
   };
   // send back all stations as JSON
 
-// POST /api/stations
+// GET /api/stations/update
 function create(req, res) {
-  // create a station based on request body and send it back as JSON
+  db.Locat.remove({}, function(err, locats){
+    console.log('all stations removed');
+  db.Locat.create(stations, function(err, stations){
+    if (err) { return console.log('ERROR', err); }
+    console.log('all stations:', stations);
+    console.log('created', stations.length, "stations");
+  });
+});
+  
 }
 
 // GET /api/stations/:stationId
