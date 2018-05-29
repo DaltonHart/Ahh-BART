@@ -120,7 +120,7 @@ var stations = [
   },
   {
       name : 'Daly City',
-      coord: {lng:37.706533, lat:-122.468831},
+      coord: {lng:37.701828, lat:-122.468831},
       img: 'location in file system',
   },
   {
@@ -130,7 +130,7 @@ var stations = [
   },
   {
       name : 'Dublin / Pleasanton',
-      coord: {lng:37.701646, lat:-122.899540},
+      coord: {lng:37.701646, lat:-121.898816},
       img: 'location in file system',
   },
   {
@@ -285,7 +285,7 @@ var stations = [
   },
   {
       name : 'West Dublin / Pleasanton',
-      coord: {lng:37.700015,lat:-121.927775},
+      coord: {lng:37.700189,lat:-121.927775},
       img: 'location in file system',
   },
   {
