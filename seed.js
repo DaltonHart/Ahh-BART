@@ -42,13 +42,13 @@ db.Post.remove({}, function(err, posts){
 
 db.Locat.remove({}, function(err, locats){
     // code in here runs after all posts are removed
-    db.Locat.create(stations, function(err, stations){
-      // code in here runs after all posts are created
-      if (err) { return console.log('ERROR', err); }
-      console.log("all posts:", stations);
-      console.log("created", stations.length, "stations");
+    // db.Locat.create(stations, function(err, stations){
+    //   // code in here runs after all posts are created
+    //   if (err) { return console.log('ERROR', err); }
+    //   console.log("all posts:", stations);
+    //   console.log("created", stations.length, "stations");
       process.exit();
-    });
+    // });
   });
 
   var stations = [
