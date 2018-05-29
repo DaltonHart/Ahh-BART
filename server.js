@@ -6,6 +6,7 @@ const controllers = require('./controllers');
 
 
 app.use(express.static('public'));
+app.use(express.static("."));
 
 const db = require(`./models`);
 
