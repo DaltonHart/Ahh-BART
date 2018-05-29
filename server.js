@@ -1,10 +1,11 @@
 // required section
 const express = require("express");
 const app = express();
-
+const bodyParser = require('body-parser');
 const controllers = require('./controllers');
 
 
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use(express.static("."));
 
@@ -24,6 +25,8 @@ app.get('/', (req, res) => {
 //routes
 app.get('/api/posts', controllers.post.index);
 app.get('/api/stations', controllers.locat.index);
+
+app.post('/api/posts', controllers.post.create);
 
 
 

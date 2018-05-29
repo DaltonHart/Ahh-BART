@@ -26,18 +26,17 @@ var postsList = [{
         default : 'String',
     },
     date: '05/25/2018',
-}, {
-
-}];
+}
+];
 
 db.Post.remove({}, function(err, posts){
   // code in here runs after all posts are removed
-  db.Post.create(postsList, function(err, posts){
-    // code in here runs after all posts are created
-    if (err) { return console.log('ERROR', err); }
-    console.log("all posts:", posts);
-    console.log("created", posts.length, "posts");
-  });
+//   db.Post.create(postsList, function(err, posts){
+//     // code in here runs after all posts are created
+//     if (err) { return console.log('ERROR', err); }
+//     console.log("all posts:", posts);
+//     console.log("created", posts.length, "posts");
+  //});
 });
 
 db.Locat.remove({}, function(err, locats){
