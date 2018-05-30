@@ -9,8 +9,20 @@ $(document).ready(function(){
 
 console.log('Posts Working!');
 
+
     $("form").submit(function(e) {
     e.preventDefault();
+    $.ajax({
+        method: 'GET',
+        url: "api/stations",
+        success: changeVal,
+        error: errorLog
+    });
+ function changeVal(res){
+     console.log(` this is :${$('option').val()}`);
+    let station = res.find(stations => stations.name === $("option").val());
+    console.log(station);
+    $('.imgSelector').attr('value',station.img);
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
     console.log(str);
@@ -18,6 +30,9 @@ console.log('Posts Working!');
     $("form").each(function() {
       this.reset();
     });
+ }
+    
+    //window.location.reload();
     });
 
     $('#info').ready(function(){
@@ -47,16 +62,18 @@ console.log('Posts Working!');
             });
         };
        function renderPosts(post){
+           //
            console.log('rendered:',post);
            var commentHTML = (`<article>
-           <image src="#" />
+           <image src="${post.img}" />
            <p class="comment">${post.comment}</p>
            <p class="date">${post.date}</p>
            <p class="location">${post.location}</p>
          </article>`);
            $('.item3').prepend(commentHTML);
+        
        };
-       
+    
        function gotStations(stations) {
         stations.forEach(function(station){
             renderStationsList(station);
@@ -64,8 +81,10 @@ console.log('Posts Working!');
     }
 
     function renderStationsList(station){
-        console.log("rendered:", station.name);
-        var listItem = (`<option value="${station._id}">${station.name}</option>`)
+        //console.log("rendered:", station.name);
+        var listItem = (`<option value="${station.name}">${station.name}</option>`)
         $('#locations').append(listItem);
     }
+
+
 });

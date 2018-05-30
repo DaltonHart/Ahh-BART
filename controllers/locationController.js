@@ -57,7 +57,7 @@ var stations = [
   {
       name : '12th St. Oakland City Center',
       coord: {lng:37.803647,lat:-122.271596},
-      img: 'location in file system',
+      img: '/images/Oakland City Center 12th Street.jpg',
   },
   {
       name : '16th St. Mission (SF)',
