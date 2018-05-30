@@ -1,12 +1,14 @@
 from https://stackoverflow.com/questions/32540044/html-display-current-date on how to set up the date
 for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image  
 
+COOL CODE SNIPPETS
+////////////////////////////////////////////////////////////////////////////////////////
 //how to add transit layer to Google Map
 var transitLayer = new google.maps.TransitLayer();
         transitLayer.setMap(map);
 
 //also if you see BIG GREY BLOCKS on your map. remove the MAX height on your div. causes clipping issues in the maps database. 
-
+////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////
 //heroku setup

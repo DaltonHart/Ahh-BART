@@ -34,12 +34,9 @@
         <form class="hidden" method="post" enctype="multipart/form-data" >
         		<input name='file' value="img" type="file" accept="image/*" />
         		<img />
-            <input type="text" name="comment" />
-            <select name="location">
-              <option value="#">Volvo</option>
-              <option value="#">Saab</option>
-              <option value="#">Fiat</option>
-              <option value="#">Audi</option>
+            <textarea type="text" name="comment"></textarea>
+            <select name="location" id="locations">
+              
             </select>
             <input type="submit" value="Send" />
             <input class="hidden" type="date" name="date" id="dateSelector"/>
