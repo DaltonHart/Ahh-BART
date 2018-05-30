@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    
-    
+
+
     Date.prototype.toDateInputValue = (function() {
         var local = new Date(this);
         local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
@@ -49,14 +49,14 @@ console.log('Posts Working!');
        function renderPosts(post){
            console.log('rendered:',post);
            var commentHTML = (`<article>
-           <image src="#" />
-           <p class="comment">${post.comment}</p>
-           <p class="date">${post.date}</p>
-           <p class="location">${post.location}</p>
+           <image class="item4" src="#" />
+           <p class="comment item5">${post.comment}</p>
+           <p class="date item6">${post.date}</p>
+           <p class="location item7">${post.location}</p>
          </article>`);
            $('.item3').prepend(commentHTML);
        };
-       
+
        function gotStations(stations) {
         stations.forEach(function(station){
             renderStationsList(station);
