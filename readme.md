@@ -6,7 +6,12 @@ for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-i
 =======
 for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image  
 
+<<<<<<< HEAD
 >>>>>>> 7c34e0f2f8408f3a5b656d9e7c0afa7e35852cab
+=======
+COOL CODE SNIPPETS
+////////////////////////////////////////////////////////////////////////////////////////
+>>>>>>> d3c7c6114c9de17ea9e1d1a7f895935c531f8ea3
 //how to add transit layer to Google Map
 var transitLayer = new google.maps.TransitLayer();
         transitLayer.setMap(map);
@@ -15,8 +20,12 @@ var transitLayer = new google.maps.TransitLayer();
 //also if you see BIG GREY BLOCKS on your map. remove the MAX height on your div. causes clipping issues in the maps database.
 =======
 //also if you see BIG GREY BLOCKS on your map. remove the MAX height on your div. causes clipping issues in the maps database. 
+<<<<<<< HEAD
 >>>>>>> 7c34e0f2f8408f3a5b656d9e7c0afa7e35852cab
 
+=======
+////////////////////////////////////////////////////////////////////////////////////////
+>>>>>>> d3c7c6114c9de17ea9e1d1a7f895935c531f8ea3
 
 ////////////////////////////////////////////////////////////////////////////////////////
 //heroku setup

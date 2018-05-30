@@ -6,7 +6,7 @@ $(document).ready(function(){
         local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
         return local.toJSON().slice(0,10);
     });
-    
+
 console.log('Posts Working!');
 
     $("form").submit(function(e) {
@@ -27,6 +27,14 @@ console.log('Posts Working!');
             success: responseSucc,
             error: errorLog
           });
+
+        $.ajax({
+            method: 'GET',
+            url: "api/stations",
+            success: gotStations,
+            error: errorLog
+        });
+
         });
 
         function errorLog(a,b,c){
@@ -49,4 +57,15 @@ console.log('Posts Working!');
            $('.item3').prepend(commentHTML);
        };
        
+       function gotStations(stations) {
+        stations.forEach(function(station){
+            renderStationsList(station);
+        });
+    }
+
+    function renderStationsList(station){
+        console.log("rendered:", station.name);
+        var listItem = (`<option value="${station._id}">${station.name}</option>`)
+        $('#locations').append(listItem);
+    }
 });

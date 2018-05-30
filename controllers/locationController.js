@@ -22,6 +22,7 @@ function create(req, res) {
     if (err) { return console.log('ERROR', err); }
     console.log('all stations:', stations);
     console.log('created', stations.length, "stations");
+    res.send("All stations updated");
   });
 });
   
