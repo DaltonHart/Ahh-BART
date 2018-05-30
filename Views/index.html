@@ -37,23 +37,13 @@
 
     <div id="form-container">
     <button type="button" id="formButton">Share your BART story</button>
-<form id="form1">
-        <form method="post" enctype="multipart/form-data" >
-
-        		<input name='file' type="file" accept="image/*"/>
-        		<img>
-            <input type="text" name="anecdote">
-        		<input type="submit" value="Send"/><input class="reset" type="button" value="Reset" />
+        <form class="hidden" method="post" enctype="multipart/form-data" >
+        		<input name='file' type="file" accept="image/*" />
+        		<img />
+            <input type="text" name="anecdote" />
+        		<input type="submit" value="Send" />
+            <input class="reset" type="button" value="Reset" />
         	</form>
-
-          <!-- <button type="button" id="formButton">Toggle Form!</button>
-
-          <form id="form1">
-
-            <b>First Name:</b> <input type="text" name="firstName">
-            <b>Last Name: </b><input type="text" name="lastName">
-             <button type="button" id="submit">Submit</button>
-          </form> -->
 
   </main>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
