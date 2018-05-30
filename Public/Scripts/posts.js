@@ -1,6 +1,25 @@
 $(document).ready(function(){
     
+    
+    Date.prototype.toDateInputValue = (function() {
+        var local = new Date(this);
+        local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+        return local.toJSON().slice(0,10);
+    });
+    
 console.log('Posts Working!');
+
+    $("form").submit(function(e) {
+    e.preventDefault();
+    $('#dateSelector').val(new Date().toDateInputValue());
+    var str = $("form").serialize();
+    console.log(str);
+    $.post('api/posts', str) ;
+    $("form").each(function() {
+      this.reset();
+    });
+    });
+
     $('#info').ready(function(){
         $.ajax({
             method: 'GET',
@@ -27,9 +46,7 @@ console.log('Posts Working!');
            <p class="date">${post.date}</p>
            <p class="location">${post.location}</p>
          </article>`);
-           $('.item3').append(commentHTML);
+           $('.item3').prepend(commentHTML);
        };
        
 });
-
-

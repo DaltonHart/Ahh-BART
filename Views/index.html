@@ -21,24 +21,25 @@
 
 <body>
   <header>
-    <div> <img src="../images/AHHBARTbannerFulll.png" /> </div>
+   <nav>search</nav>
   </header>
   <main>
     <div class="container">
     <div class="item2" id="map">map</div>
-    <div class="item3">Date</div>
+    <div class="item3"></div>
 
 
     <div id="form-container">
     <button type="button" id="formButton">Share your BART story</button>
         <form class="hidden" method="post" enctype="multipart/form-data" >
-        		<!-- <input name='file' type="file" accept="image/*" />
-        		<img /> -->
-
-						<input name='file' type="file" accept="file_extension|audio/*|video/*|image/*|media_type" />
-						<img />
-            <input type="text" name="anecdote" />
-        		<input type="submit" value="Send" />
+        		<input name='file' value="img" type="file" accept="image/*" />
+        		<img />
+            <input type="text" name="comment" />
+            <select name="location">
+              
+            </select>
+            <input type="submit" value="Send" />
+            <input class="hidden" type="date" name="date" id="dateSelector"/>
             <input class="reset" type="button" value="Reset" />
         	</form>
 

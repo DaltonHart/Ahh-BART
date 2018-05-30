@@ -20,6 +20,8 @@ function googleMap() {
         center: {lat:37.789557, lng:-122.400825},
         zoom: 10
     });
+    var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
 }
 googleMap();
 
@@ -44,12 +46,14 @@ googleMap();
     //create and place the pin onto the map
           var marker = new google.maps.Marker({
             position: latLng,
-            map: map,
+            map: map,icon: {
+              url: "/images/transport_bus_station.svg",
+              scaledSize: new google.maps.Size(15, 15)
+            }   
           });
+          
     }
   }
-
-
 
 
 });

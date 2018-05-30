@@ -1,3 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-image: url(/images/AHHBARTbannerFulll.png);
+  background-position: cover;
+  height: 100px;
+}
 
 img {
   width:100%;
@@ -45,6 +54,10 @@ div #form-container {
 }
 #form1 {
   display:none;
+}
+#map{
+  height: 100%;
+  width: 100%;
 }
 .hidden {
   display: none;
