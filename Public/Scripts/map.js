@@ -20,6 +20,8 @@ function googleMap() {
         center: {lat:37.789557, lng:-122.400825},
         zoom: 9
     });
+    var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
 }
 googleMap();
 
