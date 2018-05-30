@@ -1,11 +1,14 @@
 *{
   box-sizing: border-box;
 }
-
+body {
+  height: 100vh;
+  overflow: hidden;
+}
 header{
   background-image: url(/images/AHHBARTbannerFulll.png);
   background-position: cover;
-  height: 200px;
+  height: 20vh;
 }
 
 img {
@@ -32,10 +35,9 @@ img {
   background-color: #80cbc4;
   border: none;
   border-radius: 10px;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   font-family: 'Julee', cursive;
   font-size: 2em;
+  text-align: center;
 }
 
 .item2 {
@@ -49,8 +51,12 @@ img {
   grid-row: 1 / 6;
   font-family: 'Julee', cursive;
 }
-div #form-container {
-  font-family: 'Open Sans', sans-serif;
+.item3 {
+  overflow: scroll;
+  height: 75vh;
+}
+#form-container {
+
 }
 #form1 {
   display:none;
@@ -59,6 +65,7 @@ form img {
   height: 100px;
   width: 100px;
 }
+
 #map{
   height: 100%;
   width: 100%;
@@ -108,7 +115,11 @@ article {
   grid-column: 4 / 6;
   grid-row: 4 / 6;
 }
-
+article{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 @media (width: 800px) {
 
   }
