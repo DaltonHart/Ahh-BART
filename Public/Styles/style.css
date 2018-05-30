@@ -2,7 +2,6 @@
 img {
   width:100%;
   border-radius: 10px;
-
 }
 
 .container {
@@ -22,7 +21,7 @@ img {
 }
 .container button {
   background-color: #80cbc4;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 10px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -41,22 +40,28 @@ img {
   grid-row: 1 / 6;
   font-family: 'Julee', cursive;
 }
+div #form-container {
+  font-family: 'Open Sans', sans-serif;
+}
 #form1 {
-display:none;
+  display:none;
 }
 .hidden {
   display: none;
+  font-family: 'Open Sans', sans-serif;
 }
 .showing {
   display: block;
   position:fixed;
-  top: 300px;
-  left: 500px;
-  padding: 100px;
-  border: 200px;
+  top: 100px;
+  left: 400px;
+  padding: 10px;
+  margin: 30px;
+  border: solid 5px black;
+  background: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
-}
 @media (width: 800px) {
 
   }

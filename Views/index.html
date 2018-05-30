@@ -14,7 +14,7 @@
   <meta name="viewport" content="width = device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Eater|Finger+Paint|Fredericka+the+Great|Julee|Kirang+Haerang|Rock+Salt" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../Public/Styles/style.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <title>Ahh, BART!</title>
 </head>
@@ -26,20 +26,17 @@
   <main>
     <div class="container">
     <div class="item2" id="map">map</div>
-    <div class="item3">Date<div>
-        <image src="#" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <image src="#" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <image src="#" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      </div></div>
+    <div class="item3">Date</div>
+
 
     <div id="form-container">
     <button type="button" id="formButton">Share your BART story</button>
         <form class="hidden" method="post" enctype="multipart/form-data" >
-        		<input name='file' type="file" accept="image/*" />
-        		<img />
+        		<!-- <input name='file' type="file" accept="image/*" />
+        		<img /> -->
+
+						<input name='file' type="file" accept="file_extension|audio/*|video/*|image/*|media_type" />
+						<img />
             <input type="text" name="anecdote" />
         		<input type="submit" value="Send" />
             <input class="reset" type="button" value="Reset" />
