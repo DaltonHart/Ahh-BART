@@ -46,12 +46,14 @@ googleMap();
     //create and place the pin onto the map
           var marker = new google.maps.Marker({
             position: latLng,
-            map: map,
+            map: map,icon: {
+              url: "/images/transport_bus_station.svg",
+              scaledSize: new google.maps.Size(15, 15)
+            }   
           });
+          
     }
   }
-
-
 
 
 });
