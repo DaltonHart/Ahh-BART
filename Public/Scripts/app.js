@@ -23,6 +23,10 @@ $(document).ready(function(){
 $(function(){
   event.preventDefault()
 });
+
+$("#formButton").click(function(){
+        $("#form1").toggle();
+    });
 // $(function(){
 // 		$("[type=file]").change(function(){
 // 			var file = this.files[0],

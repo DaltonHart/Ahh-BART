@@ -42,7 +42,9 @@ img {
   grid-row: 1 / 6;
   font-family: 'Julee', cursive;
 }
-
+#form1 {
+display:none;
+}
 
 }
 @media (width: 800px) {
