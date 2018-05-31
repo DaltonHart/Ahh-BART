@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-<<<<<<< HEAD
-=======
    // $('main')
       //  .append('<form id="form1"></form>');
     // $('#form1')
@@ -26,23 +24,9 @@ $("[type=file]").change(function(){
 })
 })
 
->>>>>>> 4441f24a09092bccb79c849bd15f1cbfc6a53178
 
 });
 
-<<<<<<< HEAD
-$(function(){
-  $("[type=file]").change(function(){
-  	var file = this.files[0],
-  		reader = new FileReader(),
-  		img = $(this).siblings('img')
-  	reader.onload = function (e) {
-  		img.attr('src', e.target.result);
-  	}
-  	reader.readAsDataURL(file);
-  });
-});
-=======
 
 
 // $(function(){
@@ -56,6 +40,5 @@ $(function(){
 // 			reader.readAsDataURL(file);
 // 		})
 // 	})
->>>>>>> 4441f24a09092bccb79c849bd15f1cbfc6a53178
 
   });

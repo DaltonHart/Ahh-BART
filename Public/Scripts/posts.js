@@ -62,7 +62,7 @@ console.log('Posts Working!');
            //
            console.log('rendered:',post);
            var commentHTML = (`<article>
-           <image class='item4' src="${post.img}" />
+           <image class="item4" src="${post.img}" />
            <p class="comment item5">${post.comment}</p>
            <p class="date item6">${post.date}</p>
            <p class="location item7">${post.location}</p>
