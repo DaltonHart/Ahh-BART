@@ -1,6 +1,17 @@
 
 for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image  
 
+<<<<<<< HEAD
+//how to add transit layer to Google Map
+var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
+
+//also if you see BIG GREY BLOCKS on your map. remove the MAX height on your div. causes clipping issues in the maps database. 
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+//heroku setup
+=======
 COOL CODE SNIPPETS
 ////////////////////////////////////////////////////////////////////////////////////////
 //how to add transit layer to Google Map
@@ -36,6 +47,7 @@ $.ajax({
 
 //heroku setup
 ////////////////////////////////////////////////////////////////////////////////////////
+>>>>>>> 1d451c204488297fd911e6f89b845c5a23d6ab4f
 
 app.listen(process.env.PORT || 3000), function (){
     console.log ('Express server is running on localhost:3000)

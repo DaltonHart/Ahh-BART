@@ -31,10 +31,10 @@
 
     <div id="form-container">
     <button type="button" id="formButton">Share your BART story</button>
-        <form class="hidden" method="post" enctype="multipart/form-data" >
-        		<input name='file' value="img" type="file" accept="image/*" />
-        		<img />
-            <textarea type="text" name="comment" ></textarea>
+        <form class="hidden" id="postForm" method="post" enctype="multipart/form-data" >
+        		<input id="uploadPhoto" name='photo' value="img" type="file" accept="image/*" />
+        		<img class="hidden"/>
+            <textarea type="text" name="comment" maxlength="140" rows="4" cols="50"></textarea>
             <select name="location" id="locations">
             </select>
             <input type="submit" value="Send" />
@@ -45,7 +45,7 @@
     </div>
     </div>
   </main>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg&libraries=visualization"></script>
   <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src = "../Public/Scripts/app.js" ></script>
   <script src = "../Public/Scripts/map.js"></script>

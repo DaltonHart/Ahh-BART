@@ -19,20 +19,23 @@ console.log('Posts Working!');
         error: errorLog
     });
  function changeVal(res){
-     console.log(` this is :${$('option').val()}`);
-    let station = res.find(stations => stations.name === $("option").val());
+     console.log(` this is :${$('select').val()}`);
+    let station = res.find(stations => stations.name === ($("select").val()));
     console.log(station);
     $('.imgSelector').attr('value',station.img);
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
     console.log(str);
+    $.post('/upload', $('uploadPhoto').val() )
+
     $.post('api/posts', str) ;
-    $("form").each(function() {
-      this.reset();
-    });
  }
+<<<<<<< HEAD
 
     window.location.reload();
+=======
+    //window.location.reload();
+>>>>>>> c96029c85a9dfe4ea9780832a82e8cf74c954d59
     });
 
     $('#info').ready(function(){
@@ -65,7 +68,11 @@ console.log('Posts Working!');
            //
            console.log('rendered:',post);
            var commentHTML = (`<article>
+<<<<<<< HEAD
            <image class="item4" src="${post.img}" />
+=======
+           <image class='item4' src="${post.img}" />
+>>>>>>> c96029c85a9dfe4ea9780832a82e8cf74c954d59
            <p class="comment item5">${post.comment}</p>
            <p class="date item6">${post.date}</p>
            <p class="location item7">${post.location}</p>
@@ -81,7 +88,7 @@ console.log('Posts Working!');
 
     function renderStationsList(station){
         //console.log("rendered:", station.name);
-        var listItem = (`<option value="${station.name}">${station.name}</option>`)
+        var listItem = (`<option class="optionSelect" value="${station.name}">${station.name}</option>`)
         $('#locations').append(listItem);
     }
 
