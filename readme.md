@@ -41,6 +41,7 @@
 
 
 ##Cool Code Snippets
+
 //how to add transit layer to Google Map
 ```javascript
 var transitLayer = new google.maps.TransitLayer();
