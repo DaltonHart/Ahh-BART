@@ -21,11 +21,9 @@ console.log('Posts Working!');
  function changeVal(res){
      console.log(` this is :${$('select').val()}`);
     let station = res.find(stations => stations.name === ($("select").val()));
-    console.log(station);
     $('.imgSelector').attr('value',station.img);
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
-    console.log(str);
     $.post('api/posts', str);  
  }
     window.location.reload();
@@ -77,7 +75,6 @@ console.log('Posts Working!');
     }
 
     function renderStationsList(station){
-        //console.log("rendered:", station.name);
         var listItem = (`<option class="optionSelect" value="${station.name}">${station.name}</option>`)
         $('#locations').append(listItem);
     }

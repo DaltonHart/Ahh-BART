@@ -12,13 +12,11 @@
 * google maps api
 * Express 
 
-*What technologies did you use to develop this project? (bullet points)*
 
 
 
 ## Existing Features
 
-*What features does your app have? (bullet points)*
 
 * hidden form that pops up upon click of button (Share Your BART story)
 * ability to create and post comments
@@ -31,8 +29,6 @@
 
 ## Planned Features
 
-*What changes would you make to your project if you continue to work on it? (bullet points)*
-
 * heat map to show where most comments are 
 * additional posting options to: 
     - include user images upload
@@ -44,8 +40,7 @@
 * featured post of the day based on number of likes 
 
 
-##COOL CODE SNIPPETS
-////////////////////////////////////////////////////////////////////////
+##Cool Code Snippets
 //how to add transit layer to Google Map
 ```javascript
 var transitLayer = new google.maps.TransitLayer();
@@ -73,16 +68,31 @@ $.ajax({
         $('#locations').append(listItem);
     }
 ```
-///////////////////////////////////////////////////////////////////
+``` javascript
+ $("form").submit(function(e) {
+        e.preventDefault();
+    $.ajax({
+        method: 'GET',
+        url: "api/stations",
+        success: changeVal,
+        error: errorLog
+    });
+ function changeVal(res){
+     console.log(` this is :${$('select').val()}`);
+    let station = res.find(stations => stations.name === ($("select").val()));
+    $('.imgSelector').attr('value',station.img);
+    $('#dateSelector').val(new Date().toDateInputValue());
+    var str = $("form").serialize();
+    $.post('api/posts', str);  
+ }
+    window.location.reload();
+    });
+```
+#Resources Used
+*for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image
+* Google maps API documentation: https://cloud.google.com/maps-platform/
 
-
-//////////////////////////////////////////////////////////////////
-Resources Used
-for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image  
-//////////////////////////////////////////////////////////////////
-
-//heroku setup
-//////////////////////////////////////////////////////////////////
+#heroku setup
 
 app.listen(process.env.PORT || 3000), function (){
     console.log ('Express server is running on localhost:3000)
