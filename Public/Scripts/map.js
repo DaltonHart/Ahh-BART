@@ -13,16 +13,21 @@ $(document).ready(function(){
 
 //init a google map
 var map;
+
 function googleMap() {
     console.log('map!');
     map = new google.maps.Map(document.getElementById("map"), {
       //center map around montgomery station
-        center: {lat:37.789557, lng:-122.400825},
+        center: {lat:37.696884, lng:-122.125423},
         zoom: 10
     });
     var transitLayer = new google.maps.TransitLayer();
         transitLayer.setMap(map);
 }
+
+
+
+
 googleMap();
 
 //if error log error from request
@@ -54,6 +59,7 @@ googleMap();
           
     }
   }
-
+  
+ 
 
 });

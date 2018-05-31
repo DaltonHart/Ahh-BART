@@ -19,19 +19,15 @@ console.log('Posts Working!');
         error: errorLog
     });
  function changeVal(res){
-     console.log(` this is :${$('option').val()}`);
-    let station = res.find(stations => stations.name === $("option").val());
+     console.log(` this is :${$('select').val()}`);
+    let station = res.find(stations => stations.name === ($("select").val()));
     console.log(station);
     $('.imgSelector').attr('value',station.img);
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
     console.log(str);
     $.post('api/posts', str) ;
-    $("form").each(function() {
-      this.reset();
-    });
  }
-    
     //window.location.reload();
     });
 
@@ -65,10 +61,10 @@ console.log('Posts Working!');
            //
            console.log('rendered:',post);
            var commentHTML = (`<article>
-           <image src="${post.img}" />
-           <p class="comment">${post.comment}</p>
-           <p class="date">${post.date}</p>
-           <p class="location">${post.location}</p>
+           <image class='item4' src="${post.img}" />
+           <p class="comment item5">${post.comment}</p>
+           <p class="date item6">${post.date}</p>
+           <p class="location item7">${post.location}</p>
          </article>`);
            $('.item3').prepend(commentHTML);
         
