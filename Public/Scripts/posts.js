@@ -26,9 +26,11 @@ console.log('Posts Working!');
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
     console.log(str);
+    $.post('/upload', $('uploadPhoto').val() )
+
     $.post('api/posts', str) ;
  }
-    window.location.reload();
+    //window.location.reload();
     });
 
     $('#info').ready(function(){
