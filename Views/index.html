@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width = device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Eater|Finger+Paint|Fredericka+the+Great|Julee|Kirang+Haerang|Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../Public/Styles/style.css">
 
@@ -14,7 +14,7 @@
 <body>
   <header>
     <img src="/images/AHHBARTlogo.png">
-   <nav>search</nav>
+   <nav></nav>
   </header>
   <main>
     <div class="container">
@@ -24,15 +24,17 @@
 
     <div id="form-container">
       <img src="/images/sidebar.jpg">
-    <button type="button" id="formButton">Share <b><em>Your</em></b> BART horror story</button>
+      
+    <button type="button" id="formButton">Share <b><em>Your</em></b> BART Horror Story </button>
         <form class="hidden" id="postForm" method="post" enctype="multipart/form-data" >
-            <textarea type="text" name="comment" maxlength="140" rows="4" cols="50"></textarea>
-            <select name="location" id="locations">
+            <textarea type="text" name="comment" maxlength="140" rows="4" cols="50" placeholder="Enter Comment Here"></textarea>
+            <select name="location" id="locations" >
+              <option>Select Station</option>
             </select>
             <input class="hidden" type="date" name="date" id="dateSelector"/>
             <input class="hidden imgSelector" name="img">
-            <input type="submit" value="Send" />
-            <input class="reset" type="button" value="Reset" />
+            <input type="submit" value="Post" />
+            <input class="close" type="button" value="Close" />
         	</form>
     </div>
     </div>

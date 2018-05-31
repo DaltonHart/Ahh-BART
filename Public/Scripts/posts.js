@@ -60,7 +60,7 @@ console.log('Posts Working!');
        function renderPosts(post){
            //
            console.log('rendered:',post);
-           var commentHTML = (`<article class="container">
+           var commentHTML = (`<article>
            <image class='item4' src="${post.img}" />
            <p class="comment item5">${post.comment}</p>
            <p class="date item6">${post.date}</p>

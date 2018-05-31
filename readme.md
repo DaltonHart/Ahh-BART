@@ -1,19 +1,51 @@
-from https://stackoverflow.com/questions/32540044/html-display-current-date on how to set up the date
-for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image  
+# AHH BART
 
-<<<<<<< HEAD
-//how to add transit layer to Google Map
-var transitLayer = new google.maps.TransitLayer();
-        transitLayer.setMap(map);
+*A social platform to share "interesting" experiences on the California Bay Area Rapid Transit*
 
-//also if you see BIG GREY BLOCKS on your map. remove the MAX height on your div. causes clipping issues in the maps database. 
+[Link to project hosted on Heroku]()
+
+## Technologies Used
+
+* MongoDB
+* AJAX
+* JQuery
+* google maps api
+* Express 
+
+*What technologies did you use to develop this project? (bullet points)*
 
 
-////////////////////////////////////////////////////////////////////////////////////////
-//heroku setup
-=======
-COOL CODE SNIPPETS
-////////////////////////////////////////////////////////////////////////////////////////
+
+## Existing Features
+
+*What features does your app have? (bullet points)*
+
+* hidden form that pops up upon click of button (Share Your BART story)
+* ability to create and post comments
+* locations api with all BART stations
+* posts api to hold all user posts
+* map of BART stations
+* location images populate in comments automatically based on station     selection
+
+
+
+## Planned Features
+
+*What changes would you make to your project if you continue to work on it? (bullet points)*
+
+* heat map to show where most comments are 
+* additional posting options to: 
+    - include user images upload
+    - indicate which sense/s were affronted (check box specific icons for sight, hearing, smell, sanity)
+* user login 
+* notifications
+* Vue integration for dynamic animations
+* Full web app export with electronium
+* featured post of the day based on number of likes 
+
+
+##COOL CODE SNIPPETS
+////////////////////////////////////////////////////////////////////////
 //how to add transit layer to Google Map
 ```javascript
 var transitLayer = new google.maps.TransitLayer();
@@ -41,11 +73,16 @@ $.ajax({
         $('#locations').append(listItem);
     }
 ```
-////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////
+Resources Used
+for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image  
+//////////////////////////////////////////////////////////////////
 
 //heroku setup
-////////////////////////////////////////////////////////////////////////////////////////
->>>>>>> 1d451c204488297fd911e6f89b845c5a23d6ab4f
+//////////////////////////////////////////////////////////////////
 
 app.listen(process.env.PORT || 3000), function (){
     console.log ('Express server is running on localhost:3000)
@@ -62,4 +99,4 @@ git push heroku master (send git to heroku for hosting)
 
 heroku run bash (log into server for website) 
 
-///////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
