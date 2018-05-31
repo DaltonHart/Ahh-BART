@@ -40,7 +40,7 @@
 * featured post of the day based on number of likes 
 
 
-##Cool Code Snippets
+## Cool Code Snippets
 
 //how to add transit layer to Google Map
 ```javascript
@@ -89,11 +89,13 @@ $.ajax({
     window.location.reload();
     });
 ```
-#Resources Used
+# Resources Used
+
 *for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image
 * Google maps API documentation: https://cloud.google.com/maps-platform/
 
-#heroku setup
+
+# heroku setup
 
 app.listen(process.env.PORT || 3000), function (){
     console.log ('Express server is running on localhost:3000)
