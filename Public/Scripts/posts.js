@@ -11,7 +11,7 @@ console.log('Posts Working!');
 
 
     $("form").submit(function(e) {
-    e.preventDefault();
+        e.preventDefault();
     $.ajax({
         method: 'GET',
         url: "api/stations",
@@ -26,11 +26,9 @@ console.log('Posts Working!');
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
     console.log(str);
-    $.post('api/posts', str);
-    $.post('/upload', $('#photo'));
-    console.log($('#photo'));
+    $.post('api/posts', str);  
  }
-    //window.location.reload();
+    window.location.reload();
     });
 
     $('#info').ready(function(){
@@ -62,7 +60,7 @@ console.log('Posts Working!');
        function renderPosts(post){
            //
            console.log('rendered:',post);
-           var commentHTML = (`<article>
+           var commentHTML = (`<article class="container">
            <image class='item4' src="${post.img}" />
            <p class="comment item5">${post.comment}</p>
            <p class="date item6">${post.date}</p>
