@@ -91,7 +91,7 @@ $.ajax({
 ```
 # Resources Used
 
-*for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image
+* for help with the form: https://forum.jquery.com/topic/jquery-form-with-upload-image
 * Google maps API documentation: https://cloud.google.com/maps-platform/
 
 
