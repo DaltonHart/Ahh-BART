@@ -32,7 +32,7 @@ console.log('Posts Working!');
     });
  }
 
-    //window.location.reload();
+    window.location.reload();
     });
 
     $('#info').ready(function(){
@@ -65,12 +65,11 @@ console.log('Posts Working!');
            //
            console.log('rendered:',post);
            var commentHTML = (`<article>
-           <image src="${post.img}" />
-           <p class="comment">${post.comment}</p>
-           <p class="date">${post.date}</p>
-           <p class="location">${post.location}</p>
+           <image class="item4" src="${post.img}" />
+           <p class="comment item5">${post.comment}</p>
+           <p class="date item6">${post.date}</p>
+           <p class="location item7">${post.location}</p>
          </article>`);
-           $('.item3').prepend(commentHTML);
 
        };
 
