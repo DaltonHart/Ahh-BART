@@ -80,12 +80,12 @@ form img {
 }
 
 /* .hidden {
-  display: none;
+  display: none; */
   /* font-family: 'Open Sans', sans-serif; */
-} */
+}
 
 .showing {
-  display: flex;
+  /* display: flex; */
   position: fixed;
   flex-direction: column;
   align-content: center;

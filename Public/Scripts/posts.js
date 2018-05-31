@@ -68,7 +68,7 @@ console.log('Posts Working!');
            <p class="date item6">${post.date}</p>
            <p class="location item7">${post.location}</p>
          </article>`);
-
+         $('.item3').prepend(commentHTML);
        };
 
        function gotStations(stations) {
