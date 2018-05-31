@@ -26,7 +26,7 @@ console.log('Posts Working!');
     $('#dateSelector').val(new Date().toDateInputValue());
     var str = $("form").serialize();
     console.log(str);
-    $.post('api/posts', str);  
+    $.post('api/posts', str);
  }
     window.location.reload();
     });
@@ -57,24 +57,19 @@ console.log('Posts Working!');
                 renderPosts(post);
             });
         };
-       function renderPosts(post){
-           //
-           console.log('rendered:',post);
-<<<<<<< HEAD
-           var commentHTML = (`<article>
-           <image class="item4" src="${post.img}" />
-=======
-           var commentHTML = (`<article class="container">
-           <image class='item4' src="${post.img}" />
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
-           <p class="comment item5">${post.comment}</p>
-           <p class="date item6">${post.date}</p>
-           <p class="location item7">${post.location}</p>
-         </article>`);
-         $('.item3').prepend(commentHTML);
-       };
+        function renderPosts(post){
+            //
+            console.log('rendered:',post);
+            var commentHTML = (`<article class="container">
+            <image class='item4' src="${post.img}" />
+            <p class="comment item5">${post.comment}</p>
+            <p class="date item6">${post.date}</p>
+            <p class="location item7">${post.location}</p>
+          </article>`);
+          $('.item3').prepend(commentHTML);
+        };
 
-       function gotStations(stations) {
+        function gotStations(stations) {
         stations.forEach(function(station){
             renderStationsList(station);
         });

@@ -7,14 +7,8 @@ body {
   overflow: hidden;
   font-family: 'Titillium Web', sans-serif;
 }
-<<<<<<< HEAD
-
-header {
-  background-image: url(/images/AHHBARTbannerFulll.png);
-=======
 header{
   background-image: url(/images/AHHBARTbanner.png);
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
   background-position: cover;
   background-size: 100% 100%;
   height: 20vh;
@@ -32,23 +26,12 @@ header nav {
   grid-column: 2/6;
 }
 img {
-<<<<<<< HEAD
-  width: 100%;
-  border-radius: 10px;
-=======
   width:100%;
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
 }
 
 .container {
   display: grid;
-<<<<<<< HEAD
-  grid-gap: 10px;
-  padding: 10px;
-  border-radius: 10px;
-=======
 
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
 }
 
 .container>div {
@@ -99,15 +82,10 @@ img {
   overflow: scroll;
   height: 75vh;
 }
-<<<<<<< HEAD
-
-textarea {
-=======
 .item3 p {
   margin: 0;
 }
 textarea{
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
   resize: none;
 }
 
@@ -141,13 +119,7 @@ form img {
   border: solid 5px black;
   background: white;
 }
-<<<<<<< HEAD
-
-input, select, img {
-  margin: 10px 0;
-=======
 input, select, img{
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
   border: 2px black solid;
   height: 50px;
 }
@@ -225,11 +197,7 @@ article {
   padding-right: 5px;
 }
 
-<<<<<<< HEAD
-@media (width: 800px) {}
-=======
 
 @media (width: 800px) {
 
   }
->>>>>>> fe342d34694e91fc5cf3bbd3c1412549d768fb33
