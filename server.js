@@ -18,6 +18,7 @@ app.get('/api', controllers.api.index);
 //send index to front of server
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
+  // res.sendFile('views/index.html' , { root : __dirname});
 })
 
 
@@ -28,10 +29,10 @@ app.get('/api/stations', controllers.locat.index);
 app.get('/api/stations/update', controllers.locat.create);
 //POSTS
 //creates posts on post request
-app.get('/upload', (req, res) => {
-  res.send('File uploaded');
-})
+app.post('/api/posts', controllers.post.create);
 
+
+// app.use()
 
 // listen
 app.listen(3000, ()=>{
@@ -75,6 +76,6 @@ const multerConfig = {
     };
 
 // post for uploads
-app.post('/upload',multer(multerConfig).single('photo'),function(req,res){
-  res.send('Complete!');
-});
+    app.post('/upload',multer(multerConfig).single('photo'),function(req,res){
+      res.send('Complete!');
+   });
