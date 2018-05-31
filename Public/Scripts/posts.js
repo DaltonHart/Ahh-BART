@@ -30,12 +30,7 @@ console.log('Posts Working!');
 
     $.post('api/posts', str) ;
  }
-<<<<<<< HEAD
-
-    window.location.reload();
-=======
     //window.location.reload();
->>>>>>> c96029c85a9dfe4ea9780832a82e8cf74c954d59
     });
 
     $('#info').ready(function(){
@@ -68,11 +63,7 @@ console.log('Posts Working!');
            //
            console.log('rendered:',post);
            var commentHTML = (`<article>
-<<<<<<< HEAD
-           <image class="item4" src="${post.img}" />
-=======
            <image class='item4' src="${post.img}" />
->>>>>>> c96029c85a9dfe4ea9780832a82e8cf74c954d59
            <p class="comment item5">${post.comment}</p>
            <p class="date item6">${post.date}</p>
            <p class="location item7">${post.location}</p>
