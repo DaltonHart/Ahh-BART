@@ -55,9 +55,10 @@ img {
   overflow: scroll;
   height: 75vh;
 }
-#form-container {
-
+textarea{
+  resize: none;
 }
+
 #form1 {
   display:none;
 }
@@ -74,17 +75,32 @@ form img {
   display: none;
 }
 .showing {
-  display: block;
+  display: flex;
   position:fixed;
+  flex-direction: column;
+  align-content: center;
   top: 100px;
   left: 400px;
   padding: 10px;
-  margin: 30px;
   border: solid 5px black;
   background: white;
   font-family: 'Open Sans', sans-serif;
 }
-
+input, select, img{
+  margin: 10px 0;
+  border: 2px black solid;
+  height: 50px;
+}
+select{
+  border: 0;
+  outline: 2px solid #000;
+  background-color: white;
+}
+.optionSelect{
+  border: 0;
+  outline: 2px solid #000;
+  background-color: white;
+}
 article {
   display: grid;
   background-color: #3e2723;

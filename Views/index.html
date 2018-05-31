@@ -31,10 +31,10 @@
 
     <div id="form-container">
     <button type="button" id="formButton">Share your BART story</button>
-        <form class="hidden" method="post" enctype="multipart/form-data" >
+        <form class="hidden" id="postForm" method="post" enctype="multipart/form-data" >
         		<input name='file' value="img" type="file" accept="image/*" />
-        		<img />
-            <textarea type="text" name="comment" ></textarea>
+        		<img class="hidden"/>
+            <textarea type="text" name="comment" maxlength="140" rows="4" cols="50"></textarea>
             <select name="location" id="locations">
             </select>
             <input type="submit" value="Send" />

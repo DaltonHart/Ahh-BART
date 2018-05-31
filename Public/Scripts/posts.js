@@ -28,7 +28,7 @@ console.log('Posts Working!');
     console.log(str);
     $.post('api/posts', str) ;
  }
-    //window.location.reload();
+    window.location.reload();
     });
 
     $('#info').ready(function(){
@@ -78,7 +78,7 @@ console.log('Posts Working!');
 
     function renderStationsList(station){
         //console.log("rendered:", station.name);
-        var listItem = (`<option value="${station.name}">${station.name}</option>`)
+        var listItem = (`<option class="optionSelect" value="${station.name}">${station.name}</option>`)
         $('#locations').append(listItem);
     }
 
