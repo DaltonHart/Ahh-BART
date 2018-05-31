@@ -13,14 +13,21 @@ $(document).ready(function(){
 
 //init a google map
 var map;
+
 function googleMap() {
     console.log('map!');
     map = new google.maps.Map(document.getElementById("map"), {
       //center map around montgomery station
-        center: {lat:37.789557, lng:-122.400825},
+        center: {lat:37.696884, lng:-122.125423},
         zoom: 10
     });
+    var transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(map);
 }
+
+
+
+
 googleMap();
 
 //if error log error from request
@@ -44,12 +51,15 @@ googleMap();
     //create and place the pin onto the map
           var marker = new google.maps.Marker({
             position: latLng,
-            map: map,
+            map: map,icon: {
+              url: "/images/transport_bus_station.svg",
+              scaledSize: new google.maps.Size(15, 15)
+            }   
           });
+          
     }
   }
-
-
-
+  
+ 
 
 });

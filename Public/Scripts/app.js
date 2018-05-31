@@ -11,8 +11,8 @@
 
 // read this: http://javascript-coder.com/jsform/jquery-disable-button-on-click-submit.phtml
 $(document).ready(function(){
-    $('main')
-        .append('<form id="form1"></form>');
+   // $('main')
+      //  .append('<form id="form1"></form>');
     // $('#form1')
     //     // .attr("action","form1") .attr("method","post")
     //     .append('<input type="hidden" name="date" id="text" value="">')
@@ -20,9 +20,7 @@ $(document).ready(function(){
     //     .append('<input type="hidden" name="anecdote" id="anecdote" value="">')
 
 });
-$(function(){
-  event.preventDefault()
-});
+
 
 $("#formButton").click(function(){
         $('form.hidden').toggleClass('showing');
@@ -50,3 +48,4 @@ $(function(){
 // 			reader.readAsDataURL(file);
 // 		})
 // 	})
+
