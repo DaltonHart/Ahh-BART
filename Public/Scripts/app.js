@@ -19,24 +19,27 @@ $(document).ready(function(){
     //     .append('<input type="hidden" name="image" id="image" value="">')
     //     .append('<input type="hidden" name="anecdote" id="anecdote" value="">')
 
-});
-
-
-$("#formButton").click(function(){
-        $('form.hidden').toggleClass('showing');
+    $("#formButton").click(function(){
+      $('form.hidden').toggleClass('showing');
 });
 
 $(function(){
-  $("[type=file]").change(function(){
-  	var file = this.files[0],
-  		reader = new FileReader(),
-  		img = $(this).siblings('img')
-  	reader.onload = function (e) {
-  		img.attr('src', e.target.result);
-  	}
-  	reader.readAsDataURL(file);
-  })
+$("[type=file]").change(function(){
+  var file = this.files[0],
+    reader = new FileReader(),
+    img = $(this).siblings('img')
+  reader.onload = function (e) {
+    img.attr('src', e.target.result);
+  }
+  reader.readAsDataURL(file);
 })
+})
+
+
+});
+
+
+
 // $(function(){
 // 		$("[type=file]").change(function(){
 // 			var file = this.files[0],

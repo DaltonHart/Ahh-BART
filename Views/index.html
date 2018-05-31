@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<style>
-		form>img
-		{
-			border: 3px solid red;
-			min-width: 100px;
-			min-height: 100px;
-			display: block;
-		}
-	</style>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width = device-width, initial-scale=1">
@@ -32,8 +23,7 @@
     <div id="form-container">
     <button type="button" id="formButton">Share your BART story</button>
         <form class="hidden" id="postForm" method="post" enctype="multipart/form-data" >
-        		<input id="uploadPhoto" name='photo' value="img" type="file" accept="image/*" />
-        		<img class="hidden"/>
+              <input type="file" name="photo" />
             <textarea type="text" name="comment" maxlength="140" rows="4" cols="50"></textarea>
             <select name="location" id="locations">
             </select>
