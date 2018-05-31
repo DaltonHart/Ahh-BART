@@ -24,11 +24,10 @@ console.log('Posts Working!');
     console.log(station);
     $('.imgSelector').attr('value',station.img);
     $('#dateSelector').val(new Date().toDateInputValue());
+    $.post('/upload', $('form').photo);
     var str = $("form").serialize();
     console.log(str);
-    $.post('/upload', $('uploadPhoto').val() )
-
-    $.post('api/posts', str) ;
+    $.post('api/posts', str);
  }
     //window.location.reload();
     });
