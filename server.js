@@ -6,18 +6,16 @@ const controllers = require('./controllers');
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('public'));
-app.use(express.static("."));
+
 
 const db = require(`./models`);
 
 
 //send index to front of server
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile('/views/index.html');
   // res.sendFile('views/index.html' , { root : __dirname});
 })
-
-
 
 // get controllers
 app.get('/api', controllers.api.index);
