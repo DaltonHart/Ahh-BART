@@ -5,26 +5,17 @@ var db = require("./models");
 var postsList = [{
     comment : 'OMG WHAT IS THAT SMELL',
     location : 'West Dublin',
-    img : {
-        userImg : 'String',
-        default : 'String',
-    },
+    img : 'test',
     date: '05/25/2018',
 }, {
     comment : 'Anyone else see the naked guy?',
     location : 'Montgomery',
-    img : {
-        userImg : 'String',
-        default : 'String',
-    },
+    img : "test",
     date: '05/25/2018',
 }, {
     comment : 'We can leave comments here?',
     location : 'Embarcadero',
-    img : {
-        userImg : 'String',
-        default : 'String',
-    },
+    img : "test",
     date: '05/25/2018',
 }
 ];
