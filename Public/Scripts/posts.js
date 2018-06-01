@@ -7,9 +7,6 @@ $(document).ready(function(){
         return local.toJSON().slice(0,10);
     });
 
-console.log('Posts Working!');
-
-
     $("form").submit(function(e) {
         e.preventDefault();
     $.ajax({
