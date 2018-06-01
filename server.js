@@ -10,15 +10,19 @@ app.use(express.static("."));
 
 const db = require(`./models`);
 
-// get controllers
-app.get('/api', controllers.api.index);
-
 
 //send index to front of server
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
   // res.sendFile('views/index.html' , { root : __dirname});
 })
+
+
+
+// get controllers
+app.get('/api', controllers.api.index);
+
+
 
 
 //routes
