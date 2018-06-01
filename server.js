@@ -14,7 +14,7 @@ const db = require(`./models`);
 //send index to front of server
 app.get('/', (req, res) => {
   //res.sendFile(__dirname + '/views/index.html');
-  res.sendFile('views/index.html' , { root : __dirname});
+  res.sendFile('Views/index.html' , { root : __dirname});
 })
 
 // get controllers
